@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <p class="subheading">Choose payment method below</p>
+
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+            <div class="method active">
+                <img src="photos/credit_card.png" alt="Credit Card">
+            </div>
+            <div class="method">
+                <img src="photos/paypal.png" alt="PayPal">
+            </div>
+            <div class="method">
+                <img src="photos/amazon.png" alt="Amazon Pay">
+            </div>
+        </div>
+
+        <!-- Form Sections -->
+        <div class="form-section">
+            <!-- Billing Info -->
+            <div class="billing-info">
+                <h2>1. Billing Info</h2>
+                <form>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="John Doe">
+
+                    <label for="billing-address">Billing Address</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="billing-address" placeholder="Fyrtorni">
+                        <span class="icon">📍</span>
+                    </div>
+
+                    <div class="grid">
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Stockholm">
+                        </div>
+                        <div>
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" id="zip-code" placeholder="12804">
+                        </div>
+                    </div>
+
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option>Sweden</option>
+                        <option>Norway</option>
+                        <option>Denmark</option>
+                    </select>
+                </form>
+            </div>
+
+            <!-- Credit Card Info -->
+            <div class="credit-card-info">
+                <h2>2. Credit Card Info</h2>
+                <form>
+                    <label for="cardholder-name">Cardholder's Name</label>
+                    <input type="text" id="cardholder-name" placeholder="John Doe">
+
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="5645-6456-7665-0456">
+
+                    <div class="grid">
+                        <div>
+                            <label for="exp-month">Exp. Month</label>
+                            <select id="exp-month">
+                                <option>12</option>
+                                <option>01</option>
+                                <option>02</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="exp-year">Exp. Year</label>
+                            <select id="exp-year">
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="cvc-number">CVC Number</label>
+                    <input type="text" id="cvc-number" placeholder="468">
+                </form>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="secondary">RETURN TO STORE</button>
+            <button class="secondary">BACK TO SHIPPING</button>
+            <button class="primary">PROCEED</button>
+        </div>
+    </div>
+</body>
+</html>
